@@ -5,6 +5,14 @@ body, html {
     overflow-x: none !important;
 }
 
+/* Add font */
+
+@font-face {
+    font-family: "Raleway";
+    src: url("/assets/font/Raleway/Raleway-VariableFont_wght.ttf") format("truetype"),
+         url("/assets/font/Raleway/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+  }
+
 /* Create grid */
 .container {
     margin-right: auto;
@@ -79,24 +87,32 @@ body, html {
 
 /* Nav */
 
+nav {
+    width: 100%;
+    justify-content: center;
+}
+
 .listNavigation {
     list-style: none;
     padding: 0px !important;
 }
 
+
+
 .elementList {
-    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
 
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-text-align: center;
-
-/* Blue */
-color: #0065FC;
-display: inline-block;
-
+    /* Blue */
+    color: #0065FC;
+    display: inline-block;
 } 
+
+.elementList > a {
+    text-decoration: none !important;
+}
