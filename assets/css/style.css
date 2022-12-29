@@ -1,22 +1,19 @@
-/* Feuille de style pour booki */
+/***
+* author : Allan Latruffe
+* description : StyleSheet for the Booki's website.
+***/
 
 body, html {
-    background-color: #ffffff;
-    overflow-x: none !important;
+    background-color: #ffffff; 
 }
-
-/* Add font */
-
-@font-face {
-    font-family: "Raleway";
-    src: url("/assets/font/Raleway/Raleway-VariableFont_wght.ttf") format("truetype"),
-         url("/assets/font/Raleway/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
-  }
 
 /* Create grid */
 .container {
     margin-right: auto;
-    margin-left: auto;
+    margin-left:auto;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 0px;
     max-width: 1400px; /* Permet le breakpoint max demandé */
 }
 
@@ -89,15 +86,15 @@ body, html {
 
 nav {
     width: 100%;
-    justify-content: center;
 }
 
 .listNavigation {
+    margin-top: 0px;
     list-style: none;
     padding: 0px !important;
+    display: flex; 
+    justify-content: space-between;
 }
-
-
 
 .elementList {
     font-family: 'Raleway';
@@ -109,10 +106,123 @@ nav {
     text-align: center;
 
     /* Blue */
-    color: #0065FC;
-    display: inline-block;
+    
+
+    padding-top: 46px;
+    min-width: 160px;
+    border-top: #ffffff00 solid 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
 
 .elementList > a {
     text-decoration: none !important;
+    color: #000;
+}
+
+.elementList > a:hover , .elementListActive > a {
+    color: #0065FC !important;
+}
+
+.elementList:hover, .elementListActive {
+    border-top: #0065FC solid 2px;
+}
+
+
+
+/* LogoType */
+
+#logoHeader {
+    padding-top: 44px;
+}
+
+#mainLogo { 
+    max-width: 61px;
+    height: 19px;
+}
+
+
+
+/* Font type */
+
+.h1 {
+    padding-top: 63px;
+    margin:0px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.h2 {
+    padding-top: 8px;
+    margin: 0px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+/* Form */
+
+#formSearch {
+    margin: 0px;
+    padding-top: 20px;
+}
+
+#searchBar label{
+    font-size: 18px;
+    background-color: #F2F2F2;
+    padding: 16px 18px 15px 18px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#searchBar input[type="text"] {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px !important;
+    line-height: 21px;
+    text-align: center;
+    border: 1px solid #F2F2F2;
+    /* Black */
+    color: #000000;
+    min-width: 235px;
+    appearance: none;
+}
+
+::placeholder {
+    color: #000;
+    text-align: start;
+    padding-left: 10px;
+}
+
+#searchBar input[type="submit"] {
+    padding: 15px 16px;
+
+    /* Blue */
+    background: #0065FC;
+    /* Blue */
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    /* White */
+    color: #FFFFFF;
+
 }

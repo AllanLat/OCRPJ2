@@ -5,30 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki Accueil</title>
-    <!-- Balise SEO -->
+    <!-- SEO -->
 
-    <!-- css  -->
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    
 </head>
 <body class="container">
 <header class="row">
-    <div class="col-10">
-        <img id="logoHeader" src="assets/imgs/logo/Booki_bd.png" alt="logo de notre société - Booki" title="Notre Logo">
+    <div id="logoHeader" class="col-9">
+        <img id="mainLogo" src="assets/imgs/logo/Booki_bd.png" alt="logo de notre société - Booki" title="Notre Logo">
     </div>
-    <div class="col-2">
+    <div class="col-3">
         <nav>
             <ul class="listNavigation">
-                <li class="elementList"><a href="#">Hébergements</a></li>
+                <li class="elementList elementListActive"><a href="#">Hébergements</a></li>
                 <li class="elementList"><a href="#">Activités</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
+<main>
+    <!-- Header zone -->
+    <section class="row">
+        <div class="col-12">
+            <h1 class="h1">Trouvez votre hébergement pour des vacances de rêve</h1>
+        </div>
+        <div class="col-12">
+            <h2 class="h2">En plein centre-ville ou en pleine nature</h2>
+        </div>
+    </section>
+    <!-- Form -->
+    <section id="formSearch">
+        <form action="#" method="post">
+            <!-- SEARCH BAR -->
+            <div id="searchBar" class="row">
+                <label for="location"><i class="fa-solid fa-location-dot"></i></label>
+                <input type="text" name="" id="location" placeholder="Marseille, France">
+                <input type="submit" value="Rechercher">
+            </div>
+            <!-- Filtre type -->
+            <div class="row">
 
-<!-- Script JS  (icon) -->
-<script src="https://kit.fontawesome.com/3acb895cee.js"></script>
+            </div>
+        </form>
+    </section>
+</main>
+
+<!-- Script JS (icon) -->
+<script src="https://kit.fontawesome.com/3acb895cee.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
