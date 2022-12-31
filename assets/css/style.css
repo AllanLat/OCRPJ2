@@ -170,6 +170,11 @@ nav {
     color: #000000;
 }
 
+i {
+    color: #000;
+}
+
+
 /* Form */
 
 #formSearch {
@@ -199,31 +204,25 @@ nav {
     appearance: none;
 }
 
-::placeholder {
-    color: #000;
-    text-align: start;
-    padding-left: 10px;
-}
-
 #searchBar input[type="submit"] {
     padding: 15px 16px;
-
-    /* Blue */
     background: #0065FC;
-    /* Blue */
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-
-    /* White */
     color: #FFFFFF;
 
+}
+
+::placeholder {
+    color: #000;
+    text-align: start;
+    padding-left: 10px;
 }
 
 /* area filtre */
@@ -252,31 +251,24 @@ input[type="checkbox"].inputFiltre:checked + label {
     background: #DEEBFF;
 }
 
-label {
+#searchForm label {
     color: #000;
     text-transform: capitalize;
 }
-
-i {
-    color: #000;
-}
-
-#filtres > div > label i {
-    color: #0065FC;
-    margin-right: 10px;
-}
-
-
-
+/* Filtre area */
 #filtres {
     flex-direction: row;
     width: 100%;
 }
 
-#filtres > div {
-    flex: 0 0 auto;
-    max-width: 20%;
-    margin-right: 36px;
+#filtres label i {
+    color: #0065FC;
+    margin-right: 10px;
+}
+
+#filtreTitles > p {
+    margin: Opx;
+    display: inline;
 }
 
 #filtreTitles {
@@ -290,7 +282,8 @@ i {
     margin-right: 32px;
 }
 
-#filtreTitles > p {
-    margin: Opx;
-    display: inline;
+#filtres > div {
+    flex: 0 0 auto;
+    max-width: 20%;
+    margin-right: 36px;
 }
