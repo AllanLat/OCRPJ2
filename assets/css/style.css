@@ -53,7 +53,7 @@ body, html {
 
 .col-7 {
     flex: 0 0 auto;
-    width: 58.33;
+    width: 58.33%;
 }
 
 .col-8 {
@@ -73,7 +73,7 @@ body, html {
 
 .col-11 {
     flex: 0 0 auto;
-    width: 91,5%;
+    width: 91.50%;
 }
 
 .col-12 {
@@ -198,7 +198,6 @@ i {
     line-height: 21px;
     text-align: center;
     border: 1px solid #F2F2F2;
-    /* Black */
     color: #000000;
     min-width: 235px;
     appearance: none;
@@ -267,7 +266,7 @@ input[type="checkbox"].inputFiltre:checked + label {
 }
 
 #filtreTitles > p {
-    margin: Opx;
+    margin: 0px;
     display: inline;
 }
 
