@@ -92,7 +92,7 @@ nav {
     width: 100%;
 }
 
-.listNavigation {
+.list-navigation {
     margin-top: 0px;
     list-style: none;
     padding: 0px !important;
@@ -100,7 +100,7 @@ nav {
     justify-content: space-between;
 }
 
-.elementList {
+.element-list {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -121,16 +121,16 @@ nav {
     align-items: center;
 } 
 
-.elementList > a {
+.element-list > a {
     text-decoration: none !important;
     color: #000;
 }
 
-.elementList > a:hover , .elementListActive > a {
+.element-list > a:hover , .element-list-active > a {
     color: #0065FC !important;
 }
 
-.elementList:hover, .elementListActive {
+.element-list:hover, .element-list-active {
     border-top: #0065FC solid 2px;
 }
 
@@ -230,11 +230,11 @@ i {
 
 /* area filtre */
 
-input[type="checkbox"].inputFiltre {
+input[type="checkbox"].input-filtre {
     display: none;
 }
 
-input[type="checkbox"].inputFiltre + label {
+input[type="checkbox"].input-filtre + label {
     border: 1px solid transparent;
     font-family: 'Raleway';
     font-style: normal;
@@ -244,14 +244,15 @@ input[type="checkbox"].inputFiltre + label {
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     padding: 14px 20px;
+    min-width: 160px !important;
 }
 
 
-input[type="checkbox"].inputFiltre:checked + label {
+input[type="checkbox"].input-filtre:checked + label {
     background: #DEEBFF;
 }
 
-#searchForm label {
+#search label {
     color: #000;
     text-transform: capitalize;
 }
@@ -296,6 +297,7 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    margin: 0px;
 }
 
 
