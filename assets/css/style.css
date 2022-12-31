@@ -10,14 +10,14 @@ body, html {
 /* Create grid */
 .container {
     margin-right: auto;
-    margin-left:auto;
+    margin-left: auto;
     padding-left: 55px;
     padding-right: 55px;
     margin-top: 0px;
     max-width: 1400px; /* Permet le breakpoint max demandé */
 }
 
-.row {
+.row, .row>div {
     display: flex;
     flex-wrap: wrap;
 }
@@ -150,10 +150,9 @@ nav {
 .h1 {
     padding-top: 63px;
     margin:0px;
-
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 700 !important;
     font-size: 22px;
     line-height: 26px;
     color: #000000;
@@ -225,4 +224,73 @@ nav {
     /* White */
     color: #FFFFFF;
 
+}
+
+/* area filtre */
+#filtres {
+    margin-top: 36px;
+}
+
+input[type="checkbox"].inputFiltre {
+    display: none;
+}
+
+input[type="checkbox"].inputFiltre + label {
+    border: 1px solid transparent;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 14px 20px;
+}
+
+
+input[type="checkbox"].inputFiltre:checked + label {
+    background: #DEEBFF;
+}
+
+label {
+    color: #000;
+    text-transform: capitalize;
+}
+
+i {
+    color: #000;
+}
+
+#filtres > div > label i {
+    color: #0065FC;
+    margin-right: 10px;
+}
+
+
+
+#filtres {
+    flex-direction: row;
+    width: 100%;
+}
+
+#filtres > div {
+    flex: 0 0 auto;
+    max-width: 20%;
+    margin-right: 36px;
+}
+
+#filtreTitles {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    margin-right: 32px;
+}
+
+#filtreTitles > p {
+    margin: Opx;
+    display: inline;
 }
