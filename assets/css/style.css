@@ -26,6 +26,10 @@ body, html {
     width: 8.3333%;
 }
 
+.mt-3 {
+    margin-top: 36px;
+}
+
 .col-2 {
    flex: 0 0 auto;
    width: 16.6666%;
@@ -225,9 +229,6 @@ i {
 }
 
 /* area filtre */
-#filtres {
-    margin-top: 36px;
-}
 
 input[type="checkbox"].inputFiltre {
     display: none;
@@ -285,4 +286,36 @@ input[type="checkbox"].inputFiltre:checked + label {
     flex: 0 0 auto;
     max-width: 20%;
     margin-right: 36px;
+}
+
+/* INFO AREA */
+
+p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+
+.info {
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    padding: 7px;
+    margin-right: 11px;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.info i{
+    justify-content: center;
+    display: block;
+    color: #0065FC;
 }
