@@ -127,7 +127,7 @@ nav {
     color: #000;
 }
 
-.element-list > a:hover , .element-list-active > a {
+.element-list:hover > a , .element-list-active > a {
     color: #0065FC !important;
 }
 
@@ -224,7 +224,7 @@ i {
     font-size: 18px;
     line-height: 21px;
     /* Black */
-    color: #1e0707 !important;
+    color: #ff0000 !important;
 }
 
 /* area filtre */
