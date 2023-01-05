@@ -347,7 +347,7 @@ p {
 
 #searchResult > div {
     background-color: #F2F2F2;
-    padding: 40px;
+    padding: 40px 40px 10px 40px;
     border-radius: 20px;
 }
 
@@ -361,6 +361,7 @@ p {
     max-width: 270px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
+    margin-bottom: 30px;
 }
 
 .card img {
@@ -382,6 +383,10 @@ p {
     margin-bottom: 0px;
 }
 
+.card-group > h3 {
+    margin-top: 0px;
+}
+
 .card-content > p {
     margin-top: 10px;
     margin-bottom: 0px;
@@ -389,4 +394,10 @@ p {
 
 .card-content > p > i {
     color: #0065FC;
+}
+
+.card-group > .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
