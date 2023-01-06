@@ -470,7 +470,6 @@ p {
 #activite {
     background-color: #FFFFFF;
     margin-top: 40px;
-    padding: 0px;
 }
 
 #activite .card-group {
@@ -507,4 +506,40 @@ p {
 footer {
     background-color: #F2F2F2;
     padding: 45px 70px;
+    margin-top: 40px;
+}
+
+footer .row > div.col-4 {
+    display: block;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+footer li {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+footer h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
 }
