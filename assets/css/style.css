@@ -470,6 +470,7 @@ p {
 #activite {
     background-color: #FFFFFF;
     margin-top: 40px;
+    padding: 0px;
 }
 
 #activite .card-group {
