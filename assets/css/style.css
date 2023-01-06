@@ -12,8 +12,6 @@ body, html {
 .container {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 55px;
-    padding-right: 55px;
     margin-top: 0px;
     max-width: 1400px; /* Permet le breakpoint max demandé */
 }
@@ -340,64 +338,173 @@ p {
     color: #0065FC;
 }
 
-/* Search Result */
-#searchResult {
+
+/* Changemnt de tactique version */
+
+#showResult {
     margin-top: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
-#searchResult > div {
+#mostPopular {
+    max-width: 420px;
+    width: auto;
+}
+
+#searchResult {
+    max-width: 840px;  
+}
+
+
+.card-contain {
     background-color: #F2F2F2;
     padding: 40px 40px 10px 40px;
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
-.card-group, .card {
-    display: block !important;
-    flex-wrap: nowrap;
+.card-group {
+    justify-content: space-between;
 }
 
 .card {
     background-color: white;
-    max-width: 270px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
     margin-bottom: 30px;
+    overflow: hidden;
+   
+}
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-title h3 {
+    margin: 0px;
+}
+.card-content {
+    justify-content: space-around;
 }
 
 .card img {
-    width: 260px;
-    height: 125px;
     object-fit: cover;
     border: 5px solid #FFFFFF;
+}
+
+.card-text h4 {
+    margin: 0px;
+}
+
+.card-text p {
+    margin: 10px 0px 10px 0px;
+}
+
+.card-note i , .card-title i {
+    color: #0065FC;
+}
+
+.card-note i:nth-child(5) {
+    color: #D9D9D9;
+}
+
+.link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #000;
+}
+
+#searchResult img {
+    width: 250px;
+    height: 120px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .card-content {
-    padding-left: 15px;
-    padding-right: 25px;
-    padding-bottom: 10px;
+    padding: 5px 25px 10px 15px;
 }
 
-.card-content > .h4 {
-    margin-top: 4px;
-    margin-bottom: 0px;
+#searchResult .card {
+    max-width: 260px;
 }
 
-.card-group > h3 {
-    margin-top: 0px;
+
+#mostPopular img {
+    width: 135px;
+    height: 145px;
+    border-radius: 20px 0px 0px 20px;
 }
 
-.card-content > p {
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-.card-content > p > i {
-    color: #0065FC;
-}
-
-.card-group > .row {
+#mostPopular .card {
     display: flex;
+    flex-wrap: nowrap;
+    max-width: 343px;
+}
+
+#mostPopular .card-content{
+    padding-top: 15px;
+    display: flex !important;
+    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
+}
+
+#mostPopular .card-text p {
+    font-size: 14px;
+}
+
+#mostPopular .card-text h4 {
+    font-size: 16px;
+}
+
+
+/* Area Activity */
+
+#activite {
+    background-color: #FFFFFF;
+    margin-top: 40px;
+    padding: 0px;
+}
+
+#activite .card-group {
+    display: flex;
+    margin-top: 20px ;
+    flex-direction: row;
+}
+#activite .card {
+    max-width: 304px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+#activite .card img {
+    border: none;
+    width: 304px;
+    height: 389px;
+}
+
+#activite .card .card-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#activite .card .card-content h4 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* Footer  */
+
+footer {
+    background-color: #F2F2F2;
+    padding: 45px 70px;
 }
