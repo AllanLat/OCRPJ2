@@ -724,14 +724,6 @@ footer a {
         flex-wrap: nowrap;
     }
 
-    #searchResult .card, #searchResult .card img, #mostPopular .card {
-        min-width: 100% !important;
-    }
-
-    #showResult {
-        flex-direction: column-reverse;
-    }
-
     #conteneurFiltres {
         flex-wrap: wrap;
     }
@@ -756,7 +748,59 @@ footer a {
     }
 
     input[type="checkbox"].input-filtre + label {
-        min-width: 100px !important;
+        width: 130px !important;
+        font-size: 12px;
+    }
+
+    #searchResult .card, #searchResult .card img, #mostPopular .card {
+        min-width: 100% !important;
+    }
+
+    #showResult {
+        flex-direction: column-reverse;
+    }
+
+    #mostPopular, #searchResult {
+        width: auto;
+        max-width: 100%;
+    }
+
+    #mostPopular .card img{
+        max-width: 100%;
+        width: 33%;
+        height: 15vh;
+    }
+
+    #mostPopular {
+        border-radius: 0%;
+        padding: 20px;
+    }
+
+    #searchResult {
+        background-color: #FFFFFF;
+        padding: 20px;
+    }
+    
+    .link {
+        display: none;
+    }
+    #activite .card-group {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    #activite .card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #activite .card-title {
+        padding-left: 20px;
+        justify-content: flex-start;
+    }
+
+    footer .col-4 {
+        width: 100%;
     }
 }
 
