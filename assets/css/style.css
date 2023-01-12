@@ -19,7 +19,7 @@ body, html {
     /* Permet le breakpoint max demandé */
 }
 
-.row, .row>div {
+.row, .row>div, .row>article {
     display: flex;
     flex-wrap: wrap;
 }
@@ -195,6 +195,15 @@ nav {
 }
 i {
     color: #000;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a{
+    text-decoration: none;
+    color: #000;
+} 
+
+.card a {
+    text-decoration: none;
 }
 
 
@@ -784,11 +793,13 @@ footer a {
     .link {
         display: none;
     }
+
     #activite .card-group {
         flex-wrap: wrap;
         justify-content: center;
         padding: 20px;
     }
+
     #activite .card {
         max-width: 100%;
         width: 100%;
