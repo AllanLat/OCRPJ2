@@ -277,7 +277,8 @@ input[type="checkbox"].input-filtre + label {
     min-width: 100px !important;
 }
 
-input[type="checkbox"].input-filtre:checked + label , input[type="checkbox"].input-filtre:hover + label   {
+input[type="checkbox"].input-filtre:checked + label ,
+input[type="checkbox"].input-filtre:hover + label   {
     background: #DEEBFF;
 }
 
@@ -476,7 +477,8 @@ p {
 
 
 #mostPopular img {
-    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
     height: auto;
     border-radius: 20px 0px 0px 20px;
 }
@@ -806,6 +808,10 @@ footer a {
     
     .link {
         display: none;
+    }
+    
+    #activite {
+        margin-top: 0px ;
     }
 
     #activite .card-group {
